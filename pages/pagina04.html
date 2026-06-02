@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização — AutoPro</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- ancora de topo -->
+    <div id="topo"></div>
+
+    <!-- header fixo com menu -->
+    <header>
+        <h1>&#128296; AutoPro Oficina</h1>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="pagina01.html">Serviços</a>
+            <a href="pagina02.html">Galeria</a>
+            <a href="pagina03.html">Agendamento</a>
+            <a href="pagina04.html">Localização</a>
+            <a href="pagina05.html">Promoção</a>
+            <a href="pagina06.html">Orçamento</a>
+            <a href="pagina07.html">Sobre</a>
+        </nav>
+    </header>
+
+    <!-- espaço para compensar o header fixo -->
+    <div class="espacoheader"></div>
+
+    <main>
+
+        <!-- título da página -->
+        <section>
+            <h2>Nossa Localização</h2>
+            <p>
+                A AutoPro Oficina está localizada na Av. das Indústrias, 1420, Belo Horizonte / MG.
+                Clique nas áreas do mapa abaixo para mais informações, ou use o Google Maps interativo
+                para traçar sua rota até nós.
+            </p>
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- mapa clicável conforme capítulo 7 da apostila -->
+        <!-- Passo 1: Carregar a imagem base -->
+        <!-- Passo 2: Nomear a imagem como mapa (usemap) -->
+        <!-- Passo 3: Associar o mapa à imagem com # obrigatório -->
+        <!-- Passo 4: Criar as áreas clicáveis com shapes -->
+       
+
+        <div class="separador"></div>
+
+        <!-- informações das áreas clicáveis -->
+        <section id="estacionamento">
+            <h2>&#128663; Estacionamento</h2>
+            <p>Estacionamento gratuito para clientes com 10 vagas cobertas.</p>
+            <p>Localizado ao lado da oficina, na Rua das Oficinas.</p>
+        </section>
+
+        <div class="separador"></div>
+
+        <section id="referencia">
+            <h2>&#127984; Pontos de Referência</h2>
+            <p>&#9654; Ao lado do Supermercado Mineirão</p>
+            <p>&#9654; Esquina da Av. das Indústrias com Rua das Oficinas</p>
+            <p>&#9654; Próximo à parada do ônibus linha 201</p>
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- google maps embed conforme capítulo 7 da apostila -->
+        <!-- Passos seguidos: acessar maps > digitar endereço > compartilhar > incorporar mapa > copiar iframe -->
+        <section>
+            <h2>&#127758; Google Maps Interativo</h2>
+            <p>Use o mapa abaixo para traçar sua rota até a AutoPro:</p>
+
+            <div class="separador"></div>
+
+            <!-- iframe do Google Maps (incorporado conforme apostila cap.7) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.0!2d-43.9378!3d-19.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU1JzAwLjAiUyA0M8KwNTYnMTYuMSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                width="600"
+                height="400"
+                style="border:1px solid #cccccc;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da AutoPro Oficina no Google Maps">
+            </iframe>
+
+            <div class="separador"></div>
+
+            <!-- endereço e horários -->
+            <p>&#128205; <strong>Endereço:</strong> Av. das Indústrias, 1420 — Belo Horizonte / MG — CEP: 31.000-000</p>
+            <p>&#128336; <strong>Segunda a Sexta:</strong> 07:30 às 18:00</p>
+            <p>&#128336; <strong>Sábado:</strong> 08:00 às 13:00</p>
+            <p>&#128683; <strong>Domingo:</strong> Fechado</p>
+            <p>&#128222; <strong>Telefone:</strong> (31) 3456-7890</p>
+            <p>&#128241; <strong>WhatsApp:</strong> (31) 99999-0000</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="rodape">WhatsApp: (31) 99999-0000 | contato@autopro.com.br</p>
+        <p class="rodape">&#169; 2026 AutoPro Oficina — Projeto Final Introdução a Programação Web</p>
+        <a class="voltar" href="#topo" rel="nofollow">&#8593; Voltar ao topo</a>
+    </footer>
+
+</body>
+
+</html>

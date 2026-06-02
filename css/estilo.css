@@ -1,0 +1,474 @@
+/* ============================================
+   AutoPro — Oficina Mecânica
+   Arquivo: estilo.css
+   Disciplina: Introdução a Programação Web
+   Professor: Gilmar Luiz de Borba
+   ============================================ */
+
+
+/* questão 01 - Reset básico no seletor universal */
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* questão 02 - Seletor global/raiz: base do rem (62,5% de 16px = 10px) */
+html {
+    font-size: 62.5%;
+}
+
+
+/* questão 03 - Fundo geral da página */
+body {
+    background-color: #f5f5f5;
+}
+
+
+/* questão 04 - Header fixo durante o scroll (position: fixed) */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(180, 0, 0, 0.95);
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+
+/* questão 05 - Logo dentro do header */
+header h1 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 2px;
+}
+
+
+/* questão 06 - Menu de navegação (nav) */
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px 0px 4px 0px;
+    word-spacing: 5px;
+}
+
+
+/* questão 07 - Links do menu */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 18px;
+    padding: 4px 8px;
+    white-space: nowrap;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* questão 08 - Efeito hover no menu */
+nav a:hover {
+    background-color: #ffffff;
+    color: #cc0000;
+}
+
+
+/* questão 09 - Espaço para compensar o header fixo */
+.espacoheader {
+    padding-top: 80px;
+}
+
+
+/* questão 10 - Área principal da página */
+main {
+    padding: 20px;
+}
+
+
+/* questão 11 - Separador entre seções */
+.separador {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* questão 12 - Seções de conteúdo */
+section {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* questão 13 - Título h2 das seções */
+h2 {
+    font-size: 2.0rem;
+    color: #cc0000;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cc0000;
+    margin-bottom: 14px;
+}
+
+
+/* questão 14 - Parágrafos */
+p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333333;
+    padding: 6px 0px;
+}
+
+
+/* questão 15 - Imagem responsiva */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* questão 16 - Figure centralizada */
+figure {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+/* questão 17 - Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+/* questão 18 - Cabeçalho da tabela */
+th {
+    background-color: #cc0000;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #aa0000;
+    text-align: left;
+}
+
+
+/* questão 19 - Células da tabela */
+td {
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    color: #333333;
+}
+
+
+/* questão 20 - Linhas alternadas da tabela */
+tbody tr:nth-child(even) {
+    background-color: #f2dede;
+}
+
+
+/* questão 21 - Hover nas linhas da tabela */
+tbody tr:hover {
+    background-color: #ffcccc;
+    transition: all 300ms ease-in-out;
+}
+
+
+/* questão 22 - Grid de imagens (pagina02) */
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 10px;
+}
+
+
+/* questão 23 - Cada item do grid */
+.grade-item {
+    border: 1px solid #cccccc;
+    background-color: #fff5f5;
+    text-align: center;
+    padding: 10px;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* questão 24 - Hover nos itens do grid */
+.grade-item:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+
+/* questão 25 - Links dentro do grid */
+.grade-item a {
+    color: #cc0000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 6px;
+}
+
+
+/* questão 26 - Hover nos links do grid */
+.grade-item:hover a {
+    color: #ffffff;
+}
+
+
+/* questão 27 - Legenda das imagens no grid */
+.grade-item p {
+    font-size: 1.3rem;
+    color: #555555;
+    margin-top: 4px;
+}
+
+
+/* questão 28 - Formulário (pagina03) */
+form {
+    padding: 10px 0px;
+}
+
+
+/* questão 29 - Labels do formulário */
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+
+/* questão 30 - Campos input, select e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1.5rem;
+    border: 1px solid #cccccc;
+    background-color: #fff5f5;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+
+/* questão 31 - Botão submit */
+input[type="submit"] {
+    background-color: #cc0000;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid #aa0000;
+    cursor: pointer;
+    margin-top: 14px;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* questão 32 - Hover no botão submit */
+input[type="submit"]:hover {
+    background-color: #aa0000;
+}
+
+
+/* questão 33 - Botão reset */
+input[type="reset"] {
+    background-color: #888888;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 10px 30px;
+    border: 2px solid #666666;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-left: 10px;
+    transition: all 400ms ease-in-out;
+}
+
+
+/* questão 34 - Hover no botão reset */
+input[type="reset"]:hover {
+    background-color: #555555;
+}
+
+
+/* questão 35 - Mapa clicável (pagina04) */
+.mapaimagem {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+/* questão 36 - Botões JavaScript (pagina06) */
+.botaojs {
+    background-color: #cc0000;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 24px;
+    border: 2px solid #aa0000;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+
+/* questão 37 - Hover nos botões JavaScript */
+.botaojs:hover {
+    background-color: #aa0000;
+}
+
+
+/* questão 38 - Resultado do cálculo JavaScript */
+.resultado {
+    border: 1px solid #cccccc;
+    background-color: #fff5f5;
+    padding: 14px;
+    font-size: 1.6rem;
+    color: #333333;
+    margin-top: 16px;
+}
+
+
+/* questão 39 - Landing page hero (pagina05) */
+.hero {
+    background-color: #cc0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px solid #aa0000;
+}
+
+
+/* questão 40 - Título do hero */
+.hero h2 {
+    font-size: clamp(2.0rem, 5vw, 4.0rem);
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* questão 41 - Subtítulo do hero */
+.hero p {
+    font-size: clamp(1.4rem, 3vw, 2.0rem);
+    color: #ffe0e0;
+    margin-top: 10px;
+}
+
+
+/* questão 42 - Botão CTA da landing page */
+.btncta {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #cc0000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 12px 36px;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 400ms ease-in-out;
+    text-shadow: none;
+}
+
+
+/* questão 43 - Hover no botão CTA */
+.btncta:hover {
+    background-color: #aa0000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+/* questão 44 - Blocos de benefício na landing page */
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+
+/* questão 45 - Cada card de benefício */
+.beneficio-card {
+    border: 1px solid #cccccc;
+    background-color: #fff5f5;
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* questão 46 - Footer */
+footer {
+    border: 1px solid #cccccc;
+    background-color: #333333;
+    padding: 16px 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* questão 47 - Parágrafo do rodapé */
+.rodape {
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 4px 0px;
+}
+
+
+/* questão 48 - Link voltar ao topo */
+.voltar {
+    font-size: 1.4rem;
+    color: #ffaaaa;
+    text-decoration: none;
+}
+
+
+/* questão 49 - Hover no link voltar */
+.voltar:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* questão 50 - Link da mensagem do site */
+.mensagemsite {
+    font-size: 1.4rem;
+    color: #cc0000;
+    padding: 6px 20px;
+    background-color: #fff5f5;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* questão 51 - Responsividade com @media para telas pequenas */
+@media only screen and (max-width: 768px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+    }
+}
+
+
+/* fim */

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto — AutoPro</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- ancora de topo -->
+    <div id="topo"></div>
+
+    <!-- header fixo com menu -->
+    <header>
+        <h1>&#128296; AutoPro Oficina</h1>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="pagina01.html">Serviços</a>
+            <a href="pagina02.html">Galeria</a>
+            <a href="pagina03.html">Agendamento</a>
+            <a href="pagina04.html">Localização</a>
+            <a href="pagina05.html">Promoção</a>
+            <a href="pagina06.html">Orçamento</a>
+            <a href="pagina07.html">Sobre</a>
+        </nav>
+    </header>
+
+    <!-- espaço para compensar o header fixo -->
+    <div class="espacoheader"></div>
+
+    <main>
+
+        <!-- título da página -->
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este site foi desenvolvido como <strong>Projeto Final</strong> da disciplina
+                <strong>Introdução a Desenvolvimento Web</strong>, do curso de graduação da FUMEC,
+                sob orientação do Professor Gilmar Luiz de Borba, semestre 2026-1.
+            </p>
+            <p>
+                O tema escolhido foi um site de serviços automotivos, apresentando os recursos
+                ensinados ao longo da disciplina: HTML5, CSS3 e JavaScript básico.
+            </p>
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- foto da equipe (imagem svg) -->
+        <section>
+            <h2>&#128100; Integrantes da Equipe</h2>
+
+            <figure>
+                <img src="../images/equipe.svg" alt="Foto dos integrantes do projeto">
+            </figure>
+
+            <div class="separador"></div>
+
+            <!-- tabela com dados dos integrantes -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Função no Projeto</th>
+                        <th>Contato</th>
+                        <th>Turma</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td>Richard Augusto </td>
+                        <td>Tech Lead</td>
+                        <td>santosrick156@gmail.com</td>
+                        <td>2026-1</td>
+                    </tr>
+                    <tr>
+                        <td>João Victor Alves</td>
+                        <td>Desenvolvedor (HTML/CSS)</td>
+                        <td>@gmail.com</td>
+                        <td>2026-1</td>
+                    </tr>
+                    <tr>
+                        <td>Thiago Guarda </td>
+                        <td>Desenvolvedor (HTML/CSS)</td>
+                        <td>@gmail.com</td>
+                        <td>2026-1</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Guimarães</td>
+                        <td>Design e Estilo (CSS)</td>
+                        <td>@gmail.com</td>
+                        <td>2026-1</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Erler</td>
+                        <td>Conteúdo e Textos</td>
+                        <td>@gmail.com</td>
+                        <td>2026-1</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- sobre a oficina -->
+        <section>
+            <h2> Sobre a AutoPro Oficina</h2>
+            <p>
+                A <strong>AutoPro</strong> é uma oficina mecânica fictícia criada para fins acadêmicos,
+                como tema do Projeto Final da disciplina. O conteúdo do site como textos, serviços,
+                preços e imagens foram criados exclusivamente para demonstrar os recursos aprendidos
+                em sala de aula.
+            </p>
+            <p>
+                A oficina está ambientada em Belo Horizonte / MG e os dados de contato,
+                endereço e valores são fictícios.
+            </p>
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- recursos utilizados - lista ordenada -->
+        <section>
+            <h2> Recursos Utilizados no Projeto</h2>
+    
+
+            <div class="separador"></div>
+
+            <p><strong>HTML:</strong></p>
+            <ol style="font-size: 1.5rem; padding-left: 30px; margin-top: 6px; line-height: 2.0;">
+                <li>Estrutura semântica: header, nav, main, section, footer</li>
+                <li>Tabelas: table, tr, th, td, thead, tbody</li>
+                <li>Formulários: form (method GET), input, select, textarea, label</li>
+                <li>Mapa clicável: img usemap, map, area (rect e circle)</li>
+                <li>Google Maps: iframe embed</li>
+                <li>Âncoras: id + href="#id"</li>
+                <li>Listas: ul, ol, li</li>
+                <li>Links: target="_blank", rel="nofollow"</li>
+                <li>Figure e img responsiva</li>
+                <li>Entidades HTML: &#169;, &#8593;, &#10003; etc.</li>
+            </ol>
+
+            <div class="separador"></div>
+
+            <p><strong>CSS:</strong></p>
+            <ol style="font-size: 1.5rem; padding-left: 30px; margin-top: 6px; line-height: 2.0;">
+                <li>Reset universal com seletor *</li>
+                <li>Seletor html com font-size: 62.5% (base do rem)</li>
+                <li>Unidade rem para fontes</li>
+                <li>Bordas (border) e background-color</li>
+                <li>position: fixed para o header</li>
+                <li>display: flex no menu de navegação</li>
+                <li>display: grid com grid-template-columns e gap</li>
+                <li>Unidade fr (fragment)</li>
+                <li>Função repeat() no grid</li>
+                <li>Hover e transition (all 400ms ease-in-out)</li>
+                <li>clamp() para fontes responsivas</li>
+                <li>@media para responsividade</li>
+                <li>rgba (transparência no header)</li>
+                <li>text-shadow nos títulos</li>
+                <li>nth-child para linhas alternadas da tabela</li>
+            </ol>
+
+            <div class="separador"></div>
+
+            <p><strong>JavaScript:</strong></p>
+            <ol style="font-size: 1.5rem; padding-left: 30px; margin-top: 6px; line-height: 2.0;">
+                <li>function (funções)</li>
+                <li>var (variáveis)</li>
+                <li>alert() com caracteres de escape (\n, \")</li>
+                <li>document.getElementById()</li>
+                <li>new Date() e toLocaleDateString()</li>
+                <li>parseFloat() para cálculos</li>
+                <li>Operações aritméticas (+, *, toFixed)</li>
+                <li>innerHTML para exibir resultados</li>
+            </ol>
+
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- informações do projeto -->
+        <section>
+            <h2> Informações do Projeto</h2>
+            <p>Disciplina...: Introdução a Programação Web</p>
+            <p>Professor....: Gilmar Luiz de Borba</p>
+            <p>Semestre.....: 2026-1</p>
+            <p>Versão.......: 1.0</p>
+            <p>Tema.........: Site de Serviços Automotivos — AutoPro Oficina</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="rodape">WhatsApp: (31) 99999-0000 | contato@autopro.com.br</p>
+        <p class="rodape">&#169; 2026 AutoPro Oficina — Projeto Final Introdução a Programação Web</p>
+        <a class="voltar" href="#topo" rel="nofollow">&#8593; Voltar ao topo</a>
+    </footer>
+
+</body>
+
+</html>

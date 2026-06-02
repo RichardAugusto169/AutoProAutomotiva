@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Orçamento — AutoPro</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- ancora de topo -->
+    <div id="topo"></div>
+
+    <!-- header fixo com menu -->
+    <header>
+        <h1>&#128296; AutoPro Oficina</h1>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="pagina01.html">Serviços</a>
+            <a href="pagina02.html">Galeria</a>
+            <a href="pagina03.html">Agendamento</a>
+            <a href="pagina04.html">Localização</a>
+            <a href="pagina05.html">Promoção</a>
+            <a href="pagina06.html">Orçamento</a>
+            <a href="pagina07.html">Sobre</a>
+        </nav>
+    </header>
+
+    <!-- espaço para compensar o header fixo -->
+    <div class="espacoheader"></div>
+
+    <main>
+
+        <!-- título da página -->
+        <section>
+            <h2> Calculadora de Orçamento</h2>
+            <p>
+                Use a calculadora abaixo para estimar o valor do seu serviço na AutoPro Oficina.
+                Selecione os serviços desejados e clique em "Calcular".
+            </p>
+            <p>
+                <strong>Observação:</strong> Os valores são estimativas. O orçamento definitivo
+                é feito após inspeção técnica gratuita.
+            </p>
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- calculadora -->
+        <section>
+            <h2>Selecione os Serviços</h2>
+
+            <!-- seleção de serviços com preços -->
+            <label for="servico1">Serviço de Revisão:</label>
+            <select id="servico1" name="servico1">
+                <option value="0">-- Nenhum --</option>
+                <option value="380">Revisão 10.000 km — R$ 380,00</option>
+                <option value="620">Revisão 20.000 km — R$ 620,00</option>
+                <option value="850">Revisão 30.000 km — R$ 850,00</option>
+                <option value="1100">Revisão Completa Anual — R$ 1.100,00</option>
+            </select>
+
+            <label for="servico2">Serviço de Motor:</label>
+            <select id="servico2" name="servico2">
+                <option value="0">-- Nenhum --</option>
+                <option value="120">Troca de Óleo e Filtro — R$ 120,00</option>
+                <option value="450">Troca de Correia Dentada — R$ 450,00</option>
+                <option value="180">Troca de Velas — R$ 180,00</option>
+                <option value="280">Limpeza de Injetores — R$ 280,00</option>
+            </select>
+
+            <label for="servico3">Serviço de Freios / Suspensão:</label>
+            <select id="servico3" name="servico3">
+                <option value="0">-- Nenhum --</option>
+                <option value="80">Revisão dos Freios — R$ 80,00</option>
+                <option value="220">Troca de Pastilhas (par) — R$ 220,00</option>
+                <option value="390">Troca de Discos e Pastilhas — R$ 390,00</option>
+                <option value="130">Alinhamento e Balanceamento — R$ 130,00</option>
+                <option value="480">Troca de Amortecedores (par) — R$ 480,00</option>
+            </select>
+
+            <label for="servico4">Serviço de Elétrica:</label>
+            <select id="servico4" name="servico4">
+                <option value="0">-- Nenhum --</option>
+                <option value="150">Diagnóstico Eletrônico — R$ 150,00</option>
+                <option value="380">Troca de Bateria — R$ 380,00</option>
+                <option value="180">Higienização Ar-Condicionado — R$ 180,00</option>
+                <option value="200">Instalação de Som — R$ 200,00</option>
+            </select>
+
+            <div class="separador"></div>
+
+            <!-- campo para quantidade de serviços adicionais -->
+            <label for="qtdAdicional">Quantidade de Revisões Extras (opcional):</label>
+            <input type="text"
+                   id="qtdAdicional"
+                   name="qtdAdicional"
+                   placeholder="Ex: 2"
+                   size="5">
+
+            <label for="valorAdicional">Valor por Revisão Extra (R$):</label>
+            <input type="text"
+                   id="valorAdicional"
+                   name="valorAdicional"
+                   placeholder="Ex: 50"
+                   size="10">
+
+            <div class="separador"></div>
+
+            <!-- botões de ação usando JavaScript conforme apostila cap.8 -->
+            <button class="botaojs"
+                    id="btnCalcular"
+                    name="btnCalcular"
+                    title="Clique para calcular o orçamento"
+                    onclick="calcularOrcamento()">
+                &#128178; Calcular Orçamento
+            </button>
+
+            &nbsp;
+
+            <button class="botaojs"
+                    id="btnLimpar"
+                    name="btnLimpar"
+                    title="Clique para limpar o resultado"
+                    onclick="limparResultado()">
+                &#10006; Limpar
+            </button>
+
+            &nbsp;
+
+            <button class="botaojs"
+                    id="btnInfo"
+                    name="btnInfo"
+                    title="Clique para ver informações"
+                    onclick="mostrarInfo()">
+                &#8505; Informações
+            </button>
+
+            <div class="separador"></div>
+
+            <!-- área de resultado -->
+            <div id="areaResultado" class="resultado">
+                <p>&#128204; O resultado do cálculo aparecerá aqui após clicar em "Calcular Orçamento".</p>
+            </div>
+
+        </section>
+
+        <div class="separador"></div>
+
+        <!-- tabela de referência rápida -->
+        <section>
+            <h2>Tabela de Referência Rápida</h2>
+            <p>Principais serviços e valores estimados:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Valor Estimado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Revisão 10.000 km</td>
+                        <td>R$ 380,00</td>
+                    </tr>
+                    <tr>
+                        <td>Troca de Óleo e Filtro</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+                    <tr>
+                        <td>Alinhamento e Balanceamento</td>
+                        <td>R$ 130,00</td>
+                    </tr>
+                    <tr>
+                        <td>Diagnóstico Eletrônico</td>
+                        <td>R$ 150,00</td>
+                    </tr>
+                    <tr>
+                        <td>Revisão dos Freios</td>
+                        <td>R$ 80,00</td>
+                    </tr>
+                    <tr>
+                        <td>Higienização Ar-Condicionado</td>
+                        <td>R$ 180,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="rodape">WhatsApp: (31) 99999-0000 | contato@autopro.com.br</p>
+        <p class="rodape">&#169; 2026 AutoPro Oficina — Projeto Final Introdução a Programação Web</p>
+        <a class="voltar" href="#topo" rel="nofollow">&#8593; Voltar ao topo</a>
+    </footer>
+
+
+    <!-- JavaScript conforme ensinado na apostila (capítulo 8) -->
+    <script>
+
+        /* função para calcular o orçamento */
+        function calcularOrcamento() {
+
+            /* capturar os valores selecionados nos menus dropdown */
+            var s1 = parseFloat(document.getElementById("servico1").value);
+            var s2 = parseFloat(document.getElementById("servico2").value);
+            var s3 = parseFloat(document.getElementById("servico3").value);
+            var s4 = parseFloat(document.getElementById("servico4").value);
+
+            /* capturar revisões adicionais */
+            var qtd    = parseFloat(document.getElementById("qtdAdicional").value);
+            var valAdc = parseFloat(document.getElementById("valorAdicional").value);
+
+            /* verificar se os campos adicionais estão preenchidos */
+            if (isNaN(qtd))    { qtd    = 0; }
+            if (isNaN(valAdc)) { valAdc = 0; }
+
+            /* calcular o total dos serviços selecionados */
+            var totalServicos  = s1 + s2 + s3 + s4;
+
+            /* calcular o total dos serviços adicionais */
+            var totalAdicionais = qtd * valAdc;
+
+            /* calcular o total geral */
+            var totalGeral = totalServicos + totalAdicionais;
+
+            /* verificar se nenhum serviço foi selecionado */
+            if (totalGeral === 0) {
+                alert("Atenção!\n\nNenhum serviço foi selecionado.\nPor favor, escolha ao menos um serviço para calcular o orçamento.");
+                return false;
+            }
+
+            /* obter a data atual usando new Date() conforme apostila */
+            var tempo = new Date();
+            var dataAtual = tempo.toLocaleDateString("pt-BR");
+
+            /* montar o texto do resultado */
+            var resultado = "";
+            resultado += "<p><strong>&#128203; ORÇAMENTO ESTIMADO — AutoPro Oficina</strong></p>";
+            resultado += "<p>Data: " + dataAtual + "</p>";
+            resultado += "<hr style=\"border: 1px solid #cccccc; margin: 8px 0;\">";
+
+            if (s1 > 0) {
+                resultado += "<p>Revisão selecionada: R$ " + s1.toFixed(2) + "</p>";
+            }
+            if (s2 > 0) {
+                resultado += "<p>Serviço de motor: R$ " + s2.toFixed(2) + "</p>";
+            }
+            if (s3 > 0) {
+                resultado += "<p>Freios / Suspensão: R$ " + s3.toFixed(2) + "</p>";
+            }
+            if (s4 > 0) {
+                resultado += "<p>Serviço elétrico: R$ " + s4.toFixed(2) + "</p>";
+            }
+            if (totalAdicionais > 0) {
+                resultado += "<p>Serviços adicionais (" + qtd + " x R$ " + valAdc.toFixed(2) + "): R$ " + totalAdicionais.toFixed(2) + "</p>";
+            }
+
+            resultado += "<hr style=\"border: 1px solid #cccccc; margin: 8px 0;\">";
+            resultado += "<p><strong>TOTAL ESTIMADO: R$ " + totalGeral.toFixed(2) + "</strong></p>";
+            resultado += "<p><em>Orçamento definitivo após inspeção técnica gratuita.</em></p>";
+
+            /* exibir o resultado na área de resultado */
+            document.getElementById("areaResultado").innerHTML = resultado;
+
+        }
+        /* fim calcularOrcamento */
+
+
+        /* função para limpar o resultado */
+        function limparResultado() {
+            document.getElementById("areaResultado").innerHTML =
+                "<p>&#128204; O resultado do cálculo aparecerá aqui após clicar em \"Calcular Orçamento\".</p>";
+        }
+        /* fim limparResultado */
+
+
+        /* função para mostrar informações com alert e caracteres de escape conforme apostila */
+        function mostrarInfo() {
+
+            /* obter a data atual */
+            var tempo = new Date();
+
+            /* alert com \n (quebra de linha) e \" (aspas) conforme ensinado na apostila cap.8 */
+            alert(
+                "CALCULADORA DE ORÇAMENTO\n\n" +
+                "Página......: pagina06.html\n" +
+                "Data........: " + tempo.toLocaleDateString("pt-BR") + "\n" +
+                "Versão......: 1.0\n\n" +
+                "Observação: Os valores exibidos são estimativas.\n" +
+                "O orçamento definitivo é feito após inspeção\n" +
+                "técnica gratuita na AutoPro Oficina.\n\n" +
+                "Contato: (31) 3456-7890"
+            );
+
+        }
+        /* fim mostrarInfo */
+
+    </script>
+
+</body>
+
+</html>
