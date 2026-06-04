@@ -28,12 +28,9 @@
         </nav>
     </header>
 
-    <!-- espaço para compensar o header fixo -->
     <div class="espacoheader"></div>
 
     <main>
-
-        <!-- título da página -->
         <section>
             <h2>Agendamento de Serviço</h2>
             <p>
@@ -44,7 +41,6 @@
 
         <div class="separador"></div>
 
-        <!-- formulário de agendamento com method GET conforme apostila -->
         <section>
             <h2>Formulário de Agendamento</h2>
 
@@ -52,53 +48,29 @@
 
                 <!-- dados pessoais -->
                 <label for="nome">Nome Completo:</label>
-                <input type="text"
-                       id="nome"
-                       name="nome"
-                       placeholder="Digite seu nome completo"
-                       size="40">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" size="40">
 
                 <label for="telefone">Telefone / WhatsApp:</label>
-                <input type="tel"
-                       id="telefone"
-                       name="telefone"
-                       placeholder="(00) 00000-0000"
-                       size="20">
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" size="20">
 
                 <label for="email">E-mail:</label>
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="seu@email.com"
-                       size="40">
+                <input type="email" id="email" name="email" placeholder="seu@email.com" size="40">
 
                 <div class="separador"></div>
 
                 <!-- dados do veículo -->
                 <label for="veiculo">Veículo (Marca e Modelo):</label>
-                <input type="text"
-                       id="veiculo"
-                       name="veiculo"
-                       placeholder="Ex: Fiat Uno, Volkswagen Gol"
-                       size="40">
+                <input type="text" id="veiculo" name="veiculo" placeholder="Ex: Fiat Uno, Volkswagen Gol" size="40">
 
                 <label for="ano">Ano do Veículo:</label>
-                <input type="text"
-                       id="ano"
-                       name="ano"
-                       placeholder="Ex: 2020"
-                       size="10">
+                <input type="text" id="ano" name="ano" placeholder="Ex: 2020" size="10">
 
                 <label for="placa">Placa:</label>
-                <input type="text"
-                       id="placa"
-                       name="placa"
-                       placeholder="Ex: ABC-1234"
-                       size="12">
+                <input type="text" id="placa" name="placa" placeholder="Ex: ABC-1234" size="12">
 
                 <div class="separador"></div>
 
-                <!-- tipo de serviço - menu dropdown (select) -->
+                <!-- tipo de serviço -->
                 <label for="servico">Tipo de Serviço:</label>
                 <select id="servico" name="servico">
                     <option value="">-- Selecione o serviço --</option>
@@ -114,13 +86,12 @@
                     <option value="outro">Outro serviço</option>
                 </select>
 
-                <!-- turno - radio buttons -->
                 <label>Turno de Preferência:</label>
-                <input type="radio" id="manha"  name="turno" value="manha">
+                <input type="radio" id="manha" name="turno" value="manha">
                 <label for="manha" style="display:inline; font-weight:normal;">Manhã (07:30 às 12:00)</label>
                 <br>
-                <input type="radio" id="tarde"  name="turno" value="tarde">
-                <label for="tarde"  style="display:inline; font-weight:normal;">Tarde (13:00 às 18:00)</label>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde" style="display:inline; font-weight:normal;">Tarde (13:00 às 18:00)</label>
                 <br>
                 <input type="radio" id="qualquer" name="turno" value="qualquer">
                 <label for="qualquer" style="display:inline; font-weight:normal;">Qualquer horário</label>
@@ -129,46 +100,38 @@
 
                 <!-- data -->
                 <label for="data">Data Preferida:</label>
-                <input type="date"
-                       id="data"
-                       name="data">
+                <input type="date" id="data" name="data">
 
                 <div class="separador"></div>
 
-                <!-- serviços adicionais - checkboxes -->
+                <!-- serviços adicionais -->
                 <label>Serviços Adicionais (marque se desejar):</label>
-                <input type="checkbox" id="chkOleo"  name="adicional" value="oleo">
-                <label for="chkOleo"  style="display:inline; font-weight:normal;">Verificação do nível de óleo</label>
+                <input type="checkbox" id="chkOleo" name="adicional" value="oleo">
+                <label for="chkOleo" style="display:inline; font-weight:normal;">Verificação do nível de óleo</label>
                 <br>
-                <input type="checkbox" id="chkPneu"  name="adicional" value="pneu">
-                <label for="chkPneu"  style="display:inline; font-weight:normal;">Calibragem dos pneus</label>
+                <input type="checkbox" id="chkPneu" name="adicional" value="pneu">
+                <label for="chkPneu" style="display:inline; font-weight:normal;">Calibragem dos pneus</label>
                 <br>
                 <input type="checkbox" id="chkFluid" name="adicional" value="fluidos">
                 <label for="chkFluid" style="display:inline; font-weight:normal;">Verificação dos fluidos</label>
                 <br>
-                <input type="checkbox" id="chkBat"   name="adicional" value="bateria">
-                <label for="chkBat"   style="display:inline; font-weight:normal;">Teste da bateria</label>
+                <input type="checkbox" id="chkBat" name="adicional" value="bateria">
+                <label for="chkBat" style="display:inline; font-weight:normal;">Teste da bateria</label>
 
                 <div class="separador"></div>
 
-                <!-- observações - textarea -->
+                <!-- observações -->
                 <label for="obs">Observações / Descrição do Problema:</label>
-                <textarea id="obs"
-                          name="obs"
-                          rows="5"
-                          cols="50"
-                          placeholder="Descreva o problema ou informações adicionais sobre o serviço..."></textarea>
+                <textarea id="obs" name="obs" rows="5" cols="50"
+                    placeholder="Descreva o problema ou informações adicionais sobre o serviço..."></textarea>
 
                 <div class="separador"></div>
 
                 <!-- botões submit e reset -->
-                <input type="submit"
-                       value="Enviar Agendamento"
-                       title="Clique para enviar sua solicitação de agendamento">
+                <input type="submit" value="Enviar Agendamento"
+                    title="Clique para enviar sua solicitação de agendamento">
                 &nbsp;
-                <input type="reset"
-                       value="Limpar Campos"
-                       title="Clique para limpar todos os campos">
+                <input type="reset" value="Limpar Campos" title="Clique para limpar todos os campos">
 
             </form>
 

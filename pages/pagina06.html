@@ -28,12 +28,9 @@
         </nav>
     </header>
 
-    <!-- espaço para compensar o header fixo -->
     <div class="espacoheader"></div>
 
     <main>
-
-        <!-- título da página -->
         <section>
             <h2> Calculadora de Orçamento</h2>
             <p>
@@ -94,47 +91,29 @@
 
             <!-- campo para quantidade de serviços adicionais -->
             <label for="qtdAdicional">Quantidade de Revisões Extras (opcional):</label>
-            <input type="text"
-                   id="qtdAdicional"
-                   name="qtdAdicional"
-                   placeholder="Ex: 2"
-                   size="5">
+            <input type="text" id="qtdAdicional" name="qtdAdicional" placeholder="Ex: 2" size="5">
 
             <label for="valorAdicional">Valor por Revisão Extra (R$):</label>
-            <input type="text"
-                   id="valorAdicional"
-                   name="valorAdicional"
-                   placeholder="Ex: 50"
-                   size="10">
+            <input type="text" id="valorAdicional" name="valorAdicional" placeholder="Ex: 50" size="10">
 
             <div class="separador"></div>
 
-            <!-- botões de ação usando JavaScript conforme apostila cap.8 -->
-            <button class="botaojs"
-                    id="btnCalcular"
-                    name="btnCalcular"
-                    title="Clique para calcular o orçamento"
-                    onclick="calcularOrcamento()">
+            <button class="botaojs" id="btnCalcular" name="btnCalcular" title="Clique para calcular o orçamento"
+                onclick="calcularOrcamento()">
                 &#128178; Calcular Orçamento
             </button>
 
             &nbsp;
 
-            <button class="botaojs"
-                    id="btnLimpar"
-                    name="btnLimpar"
-                    title="Clique para limpar o resultado"
-                    onclick="limparResultado()">
+            <button class="botaojs" id="btnLimpar" name="btnLimpar" title="Clique para limpar o resultado"
+                onclick="limparResultado()">
                 &#10006; Limpar
             </button>
 
             &nbsp;
 
-            <button class="botaojs"
-                    id="btnInfo"
-                    name="btnInfo"
-                    title="Clique para ver informações"
-                    onclick="mostrarInfo()">
+            <button class="botaojs" id="btnInfo" name="btnInfo" title="Clique para ver informações"
+                onclick="mostrarInfo()">
                 &#8505; Informações
             </button>
 
@@ -198,29 +177,27 @@
         <a class="voltar" href="#topo" rel="nofollow">&#8593; Voltar ao topo</a>
     </footer>
 
-
-    <!-- JavaScript conforme ensinado na apostila (capítulo 8) -->
     <script>
 
         /* função para calcular o orçamento */
         function calcularOrcamento() {
 
-            /* capturar os valores selecionados nos menus dropdown */
+            /* capturar os valores selecionados nos menus */
             var s1 = parseFloat(document.getElementById("servico1").value);
             var s2 = parseFloat(document.getElementById("servico2").value);
             var s3 = parseFloat(document.getElementById("servico3").value);
             var s4 = parseFloat(document.getElementById("servico4").value);
 
             /* capturar revisões adicionais */
-            var qtd    = parseFloat(document.getElementById("qtdAdicional").value);
+            var qtd = parseFloat(document.getElementById("qtdAdicional").value);
             var valAdc = parseFloat(document.getElementById("valorAdicional").value);
 
             /* verificar se os campos adicionais estão preenchidos */
-            if (isNaN(qtd))    { qtd    = 0; }
+            if (isNaN(qtd)) { qtd = 0; }
             if (isNaN(valAdc)) { valAdc = 0; }
 
             /* calcular o total dos serviços selecionados */
-            var totalServicos  = s1 + s2 + s3 + s4;
+            var totalServicos = s1 + s2 + s3 + s4;
 
             /* calcular o total dos serviços adicionais */
             var totalAdicionais = qtd * valAdc;
@@ -268,24 +245,16 @@
             document.getElementById("areaResultado").innerHTML = resultado;
 
         }
-        /* fim calcularOrcamento */
-
 
         /* função para limpar o resultado */
         function limparResultado() {
             document.getElementById("areaResultado").innerHTML =
                 "<p>&#128204; O resultado do cálculo aparecerá aqui após clicar em \"Calcular Orçamento\".</p>";
         }
-        /* fim limparResultado */
 
-
-        /* função para mostrar informações com alert e caracteres de escape conforme apostila */
         function mostrarInfo() {
 
-            /* obter a data atual */
             var tempo = new Date();
-
-            /* alert com \n (quebra de linha) e \" (aspas) conforme ensinado na apostila cap.8 */
             alert(
                 "CALCULADORA DE ORÇAMENTO\n\n" +
                 "Página......: pagina06.html\n" +
@@ -298,8 +267,6 @@
             );
 
         }
-        /* fim mostrarInfo */
-
     </script>
 
 </body>

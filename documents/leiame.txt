@@ -1,0 +1,80 @@
+PROJETO FINAL - INTRODUÇÃO A PROGRAMAÇÃO WEB
+=============================================
+
+Disciplina...: Introdução a Programação Web
+Professor....: Gilmar Luiz de Borba
+Projeto......: Site de Serviços Automotivos - AutoPro Oficina
+Versão.......: 1.0
+Semestre.....: 2026-1
+
+---------------------------------------------
+ESTRUTURA DO PROJETO
+---------------------------------------------
+
+projeto-auto/
+├── index.html          → Página principal com menu de navegação
+├── CSS/
+│   └── estilo.css      → Folha de estilos global
+├── documents/
+│   └── leiame.txt      → Este arquivo
+├── images/
+│   ├── oficina.svg     → Imagem da oficina (página inicial)
+│   ├── mapa.svg        → Mapa clicável (página 04)
+│   └── equipe.svg      → Foto da equipe (página 07)
+└── pages/
+    ├── pagina01.html   → Tabela de serviços e preços
+    ├── pagina02.html   → Grid com imagens e links
+    ├── pagina03.html   → Formulário de agendamento (method GET)
+    ├── pagina04.html   → Mapa clicável da localização
+    ├── pagina05.html   → Landing page / conversão
+    ├── pagina06.html   → Calculadora de orçamento (JavaScript)
+    └── pagina07.html   → Integrantes do projeto (Sobre)
+
+---------------------------------------------
+RECURSOS UTILIZADOS (conforme apostila)
+---------------------------------------------
+
+HTML:
+- Estrutura semântica: header, nav, main, section, footer
+- Tabelas: table, tr, th, td, thead, tbody
+- Formulários: form (method GET), input, select, textarea, label
+- Mapa clicável: img usemap, map, area (rect, circle, poly)
+- Google Maps: iframe embed
+- Âncoras: id + href="#id"
+- Listas: ul, ol, li
+- Links: target="_blank", rel="nofollow"
+
+CSS:
+- Reset universal (seletor *)
+- Seletor html { font-size: 62.5% } → base rem
+- Unidade rem para fontes
+- Bordas (border)
+- Cores (background-color, color)
+- Responsividade: clamp(), display: flex, @media
+- Grid: grid-template-columns, gap, fr, repeat()
+- Hover e transition
+- position: fixed (header)
+- text-shadow
+- rgba (transparência)
+
+JavaScript:
+- alert() com caracteres de escape (\n, \")
+- Funções: function
+- Variáveis: var
+- Operações aritméticas (cálculo de orçamento)
+- document.getElementById()
+- new Date() para data atual
+
+---------------------------------------------
+INTEGRANTES
+---------------------------------------------
+
+Tech Lead: Richard Augusto
+Copywriter: Lucas Erler
+Designer: Sarah Guimarães
+Dev 1: Thiago Guarda
+Dev 2: João Victor Alves
+
+---------------------------------------------
+FIM DO ARQUIVO
+---------------------------------------------
