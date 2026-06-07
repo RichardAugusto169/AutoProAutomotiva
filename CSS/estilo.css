@@ -156,6 +156,13 @@ tbody tr:hover {
     transition: all 400ms ease-in-out;
 }
 
+.grade-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 .grade-item:hover {
     background-color: #cc0000;
     color: #ffffff;
