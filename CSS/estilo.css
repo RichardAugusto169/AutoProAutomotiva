@@ -371,3 +371,84 @@ footer {
         font-size: clamp(1.6rem, 4vw, 2.4rem);
     }
 }
+
+/* Modal de anúncio (pop-up) */
+.modal-sobreposicao {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 3px solid #cc0000;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    animation: abrirModal 0.4s ease-out;
+}
+
+@keyframes abrirModal {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-fechar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #888888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-fechar:hover {
+    color: #cc0000;
+}
+
+.modal-banner h2 {
+    font-size: 2.2rem;
+    color: #cc0000;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+
+.modal-banner p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.modal-botao-cta {
+    display: inline-block;
+    background-color: #cc0000;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.modal-botao-cta:hover {
+    background-color: #aa0000;
+}
