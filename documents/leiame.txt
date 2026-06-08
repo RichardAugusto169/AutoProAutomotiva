@@ -1,80 +1,39 @@
-PROJETO FINAL - INTRODUÇÃO A PROGRAMAÇÃO WEB
-=============================================
+ NOME DO PROJETO: AutoPro Oficina
+
+ LINK DA PUBLICAÇÃO DO PROJETO: https://github.com/RichardAugusto169/AutoProAutomotiva
+ 
+PARTICIPANTES E PAPÉIS:
+Richard: Tech-lead e Desenvolvedor JavaScript.
+João: Desenvolvedor HTML e CSS.
+Sarah: Criação e Design das imagens.
+Lucas: Redator de conteúdo.
+Thiago: Desenvolvedor HTML e CSS.
+
+OBJETIVO PRINCIPAL DO PROJETO:  
+ Aplicar os recursos e técnicas do material abordado durante as aulas demonstrando competência profissional e capacidade de trabalhar em grupo com eficiência quanto ao que se refere à administração de tempo e divisão das tarefas, além de exibir flexibilidade ao centralizar o projeto em um assunto pouco familiarizado pelos membros integrantes da equipe.
+
+DESCRIÇÃO RESUMIDA DO PROJETO:  
+ O projeto apresentado consiste em um site comercial para uma oficina mecânica especializada em serviços de manutenção e reparos automotivos. O site tem como principal objetivo facilitar a comunicação entre a empresa (fictícia) AutoPro Oficina e possíveis futuros clientes, oferecendo informações de forma organizada com uma interface intuitiva, que segue os requerimentos exigidos na estrutura do projeto. Contém a apresentação da empresa, descrição detalhada dos serviços oferecidos, tabela de preços, catálogo de produtos e peças, além de informações sobre o tempo médio de execução de determinado procedimento. Também disponibiliza informações sobre inspeções, possui localização física (fictícia) com mapa de acesso, estacionamentos e data de funcionamento do estabelecimento. 
+Além das funcionalidades voltadas para o setor dos serviços e produtos, o site tem recursos para a própria gestão dos atendimentos, como um sistema de agendamento online com envio do detalhamento sobre o veículo e seus problemas pelo cliente para receber estimativa inicial de custos, ferramentas para a solicitação de orçamentos com cálculos, seção dedicada à divulgação de promoções, meios de contato (número de telefone, WhatsApp e endereço completo), entre outros dados. Por último, o site mostra os exatos recursos utilizados na produção do próprio, com os nomes das matérias ensinadas retirados da apostila em sua linguagem/área específica (HTML5, CSS3 e JavaScript), e as informações dos criadores do projeto: e-mail, função exercida no projeto, contato, turma e fotos dos estudantes. 
+
+FINALIDADE:
+ O projeto foi desenvolvido para algum grupo social, familiar? (justifique) Não. O projeto foi elaborado apenas visando a produção a fim de cumprir as demandas descritas pelo professor, uma vez que não havia grupo social ou familiar de nenhum membro do grupo o qual seria possível encaixar a sua criação.
+
+PARTICIPAÇÃO:
+ Houve participação de todos os integrantes da equipe? (justifique) Sim, todos os membros trabalharam nas tarefas as quais os foram atribuídos.
+
+APLICAÇÃO DO PROJETO:
+ O conhecimento teórico da disciplina foi aplicado ao projeto e consequentemente revertido como benefício para a comunidade a qual foi desenvolvido? (justifique) Sim, houve a aplicação de recursos os quais foram utilizados conforme o aprendizado adquirido através das aulas e métodos disponibilizados na apostila. O projeto foi desenvolvido com o objetivo de atender os requerimentos da atividade e aprimorar as habilidades do grupo, beneficiando-o.
+
+CONCLUSÃO:
+ O projeto AutoPro Oficina não apenas permitiu que nosso grupo colocasse em prática os conhecimentos adquiridos durante as aulas de forma técnica, o trabalho contribuiu para o desenvolvimento de organização, comunicação e colaboração em equipe, exigindo pesquisa, adaptação e comprometimento de todos. O projeto foi uma atividade enriquecedora, resultando no aprimoramento de nossas competências profissionais.
+
+
+---------------------------------------------
 
 Disciplina...: Introdução a Programação Web
 Professor....: Gilmar Luiz de Borba
 Projeto......: Site de Serviços Automotivos - AutoPro Oficina
 Versão.......: 1.0
 Semestre.....: 2026-1
-
----------------------------------------------
-ESTRUTURA DO PROJETO
----------------------------------------------
-
-projeto-auto/
-├── index.html          → Página principal com menu de navegação
-├── CSS/
-│   └── estilo.css      → Folha de estilos global
-├── documents/
-│   └── leiame.txt      → Este arquivo
-├── images/
-│   ├── oficina.svg     → Imagem da oficina (página inicial)
-│   ├── mapa.svg        → Mapa clicável (página 04)
-│   └── equipe.svg      → Foto da equipe (página 07)
-└── pages/
-    ├── pagina01.html   → Tabela de serviços e preços
-    ├── pagina02.html   → Grid com imagens e links
-    ├── pagina03.html   → Formulário de agendamento (method GET)
-    ├── pagina04.html   → Mapa clicável da localização
-    ├── pagina05.html   → Landing page / conversão
-    ├── pagina06.html   → Calculadora de orçamento (JavaScript)
-    └── pagina07.html   → Integrantes do projeto (Sobre)
-
----------------------------------------------
-RECURSOS UTILIZADOS (conforme apostila)
----------------------------------------------
-
-HTML:
-- Estrutura semântica: header, nav, main, section, footer
-- Tabelas: table, tr, th, td, thead, tbody
-- Formulários: form (method GET), input, select, textarea, label
-- Mapa clicável: img usemap, map, area (rect, circle, poly)
-- Google Maps: iframe embed
-- Âncoras: id + href="#id"
-- Listas: ul, ol, li
-- Links: target="_blank", rel="nofollow"
-
-CSS:
-- Reset universal (seletor *)
-- Seletor html { font-size: 62.5% } → base rem
-- Unidade rem para fontes
-- Bordas (border)
-- Cores (background-color, color)
-- Responsividade: clamp(), display: flex, @media
-- Grid: grid-template-columns, gap, fr, repeat()
-- Hover e transition
-- position: fixed (header)
-- text-shadow
-- rgba (transparência)
-
-JavaScript:
-- alert() com caracteres de escape (\n, \")
-- Funções: function
-- Variáveis: var
-- Operações aritméticas (cálculo de orçamento)
-- document.getElementById()
-- new Date() para data atual
-
----------------------------------------------
-INTEGRANTES
----------------------------------------------
-
-Tech Lead: Richard Augusto
-Copywriter: Lucas Erler
-Designer: Sarah Guimarães
-Dev 1: Thiago Guarda
-Dev 2: João Victor Alves
-
----------------------------------------------
-FIM DO ARQUIVO
 ---------------------------------------------
