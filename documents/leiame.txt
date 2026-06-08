@@ -1,6 +1,7 @@
  NOME DO PROJETO: AutoPro Oficina
 
- LINK DA PUBLICAÇÃO DO PROJETO: https://github.com/RichardAugusto169/AutoProAutomotiva
+ LINK DA PUBLICAÇÃO DO PROJETO: https://balsamaovps.tech/projetoweb/
+ LINK DO REPOSITÓRIO NO GITHUB: https://github.com/RichardAugusto169/AutoProAutomotiva
  
 PARTICIPANTES E PAPÉIS:
 Richard: Tech-lead e Desenvolvedor JavaScript.
